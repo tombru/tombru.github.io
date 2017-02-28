@@ -1,64 +1,17 @@
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed,
-figure, figcaption, footer, header, hgroup,
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-    margin: 0;
-    padding: 0;
-    border: 0;
-    font-size: 100%;
-    font: inherit;
-    vertical-align: baseline;
-}
-
-article, aside, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section {
-    display: block;
-}
-
-body {
-    line-height: 1;
-}
-
-ol, ul {
-    list-style: none;
-}
-
-blockquote, q {
-    quotes: none;
-}
-
-blockquote:before, blockquote:after,
-q:before, q:after {
-    content: '';
-    content: none;
-}
-
-table {
-    border-collapse: collapse;
-    border-spacing: 0;
-}
-
-body {
-    font: 14px/20px 'Helvetica Neue', Helvetica, Arial, sans-serif;
+body, html {
+    height: 100%;
+    background: #222222;
+    font-family: 'Lato', sans-serif;
     color: #eeeeee;
-    background: #000
 }
 
 input[type="text"], input[type="email"] {
     background-color: #eeeeee;
     color: #000;
-    margin-bottom: 10px;
+    margin-top: 10px;
     padding-left: 10px;
 }
+
 img#banner {
     margin-top: 15px;
     margin-bottom: 10px;
@@ -66,16 +19,6 @@ img#banner {
 
 input.error {
     border:1px solid #f00;
-}
-
-.register {
-    margin: 0 auto;
-    width: 380px;
-    padding: 20px;
-    /*background: #f4f4f4;*/
-    border-radius: 3px;
-    -webkit-box-shadow: 0 0 1px 1px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.3);
-    box-shadow: 0 0 1px 1px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.3);
 }
 
 .info {
@@ -89,29 +32,32 @@ input.error {
     color: #B1B1B1;
 }
 
-input {
-    font-family: inherit;
-    font-size: inherit;
-    color: inherit;
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-}
+/*input {*/
+    /*font-family: inherit;*/
+    /*font-size: inherit;*/
+    /*color: inherit;*/
+    /*-webkit-box-sizing: border-box;*/
+    /*-moz-box-sizing: border-box;*/
+    /*box-sizing: border-box;*/
+/*}*/
 
-.register-input {
-    display: block;
-    width: 100%;
-    height: 38px;
-    margin-top: 2px;
-    font-weight: 500;
-    background: none;
-    border: 0;
-    border-bottom: 1px solid #d8d8d8;
-}
-.register-input:focus {
-    border-color: #1e9ce6;
-    outline: 0;
-}
+/*input + input {*/
+    /*margin-left: 4px;*/
+/*}*/
+
+/*.register-input {*/
+    /*width: 226px;*/
+    /*height: 38px;*/
+    /*margin-top: 2px;*/
+    /*font-weight: 500;*/
+    /*background: none;*/
+    /*border: 0;*/
+    /*border-bottom: 1px solid #d8d8d8;*/
+/*}*/
+/*.register-input:focus {*/
+    /*border-color: #e6a53d;*/
+    /*outline: 0;*/
+/*}*/
 
 .register-button {
     display: block;
@@ -149,96 +95,182 @@ input {
     outline: 0;
 }
 
-.register-switch {
-    height: 32px;
-    margin-bottom: 15px;
-    padding: 4px;
-    border-radius: 2px;
-    background-image: -webkit-linear-gradient(top, #F86F7F, #F86F7F);
-    background-image: -moz-linear-gradient(top, #F86F7F, #F86F7F);
-    background-image: -o-linear-gradient(top, #F86F7F, #F86F7F);
-    background-image: linear-gradient(to bottom, #F86F7F, #F86F7F);
-    -webkit-box-shadow: inset 0 1px rgba(0, 0, 0, 0.05), inset 1px 0 rgba(0, 0, 0, 0.02), inset -1px 0 rgba(0, 0, 0, 0.02);
-    box-shadow: inset 0 1px rgba(0, 0, 0, 0.05), inset 1px 0 rgba(0, 0, 0, 0.02), inset -1px 0 rgba(0, 0, 0, 0.02);
+
+table {
+    color: black;
+    background: #ffffff;
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
 }
 
-.thin {
-    padding-top: -2px;
+td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
 }
 
-.register-switch-input {
-    display: none;
+tr:nth-child(even) {
+    background-color: #dddddd;
 }
 
-.register-switch-label {
-    float: left;
-    width: 50%;
-    line-height: 32px;
-    color: white;
-    text-align: center;
-    text-shadow: 0 -1px rgba(0, 0, 0, 0.2);
-    cursor: pointer;
+textarea {
+    margin-top: 15px;
+    font-size: 14px;
+    height: 62px !important;
 }
 
-.width3 {
-    width: 33% !important;
-}
-
-.width4 {
-    width: 25% !important;
-}
-
-.width5 {
-    width: 20% !important;
-}
-
-.register-switch-input:checked + .register-switch-label {
-    font-weight: 500;
-    color: #434248;
-    text-shadow: 0 1px rgba(255, 255, 255, 0.5);
-    background: white;
-    border-radius: 6px;
-    background-image: -webkit-linear-gradient(top, #fefefe, #eeeeee);
-    background-image: -moz-linear-gradient(top, #fefefe, #eeeeee);
-    background-image: -o-linear-gradient(top, #fefefe, #eeeeee);
-    background-image: linear-gradient(to bottom, #fefefe, #eeeeee);
-    -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.15), 0 0 0 1px rgba(0, 0, 0, 0.1);
-    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.15), 0 0 0 1px rgba(0, 0, 0, 0.1);
-}
-
-:-moz-placeholder {
-    color: #aaa;
-    font-weight: 300;
-}
-
-::-moz-placeholder {
-    color: #aaa;
-    font-weight: 300;
-    opacity: 1;
-}
-
-::-webkit-input-placeholder {
-    color: #aaa;
-    font-weight: 300;
-}
-
-:-ms-input-placeholder {
-    color: #aaa;
-    font-weight: 300;
-}
-
-::-moz-focus-inner {
-    border: 0;
+.container{
+    display: block;
+    position: absolute;
+    margin: auto;
+    height: 450px;
+    width: 400px;
+    bottom: 0; left:0; right: 0; top:0;
     padding: 0;
 }
 
-p {
-    padding: 15px;
-    margin: 1em 0 1em;
-    color: #333;
-    background: #fff;
-    -webkit-border-radius: 10px;
-    -moz-border-radius: 10px;
-    border-radius: 10px;
+h2 {
+    color: #AAAAAA;
+    font-weight: normal;
 }
+
+.container ul{
+    list-style: none;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+
+ul li{
+    color: #AAAAAA;
+    display: block;
+    position: relative;
+    float: left;
+    width: 100%;
+    height: 100px;
+    border-bottom: 1px solid #111111;
+}
+
+ul li input[type=radio]{
+    position: absolute;
+    visibility: hidden;
+}
+
+ul li label{
+    display: block;
+    position: relative;
+    font-weight: 300;
+    font-size: 1.2em;
+    padding: 25px 25px 25px 80px;
+    margin: 10px auto;
+    height: 20px;
+    z-index: 9;
+    cursor: pointer;
+    -webkit-transition: all 0.25s linear;
+}
+
+ul li:hover label{
+    color: #FFFFFF;
+}
+
+ul li .check{
+    display: block;
+    position: absolute;
+    border: 5px solid #AAAAAA;
+    border-radius: 100%;
+    height: 25px;
+    width: 25px;
+    top: 30px;
+    left: 20px;
+    z-index: 5;
+    transition: border .25s linear;
+    -webkit-transition: border .25s linear;
+}
+
+ul li:hover .check {
+    border: 5px solid #FFFFFF;
+}
+
+ul li .check::before {
+    display: block;
+    position: absolute;
+    content: '';
+    border-radius: 100%;
+    height: 15px;
+    width: 15px;
+    top: 5px;
+    left: 5px;
+    margin: auto;
+    transition: background 0.25s linear;
+    -webkit-transition: background 0.25s linear;
+}
+
+input[type=radio]:checked ~ .check {
+    border: 5px solid #F86F7F;
+}
+
+input[type=radio]:checked ~ .check::before{
+    background: #F86F7F;
+}
+
+input[type=radio]:checked ~ label{
+    color: #F86F7F;
+}
+
+.signature {
+    position: fixed;
+    margin: auto;
+    bottom: 0;
+    top: auto;
+    width: 100%;
+}
+
+.signature p{
+    text-align: center;
+    font-family: Helvetica, Arial, Sans-Serif;
+    font-size: 0.85em;
+    color: #AAAAAA;
+}
+
+.signature .much-heart{
+    display: inline-block;
+    position: relative;
+    margin: 0 4px;
+    height: 10px;
+    width: 10px;
+    background: #AC1D3F;
+    border-radius: 4px;
+    -ms-transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+.signature .much-heart::before,
+.signature .much-heart::after {
+    display: block;
+    content: '';
+    position: absolute;
+    margin: auto;
+    height: 10px;
+    width: 10px;
+    border-radius: 5px;
+    background: #AC1D3F;
+    top: -4px;
+}
+
+.signature .much-heart::after {
+    bottom: 0;
+    top: auto;
+    left: -4px;
+}
+
+.signature a {
+    color: #AAAAAA;
+    text-decoration: none;
+    font-weight: bold;
+}
+
 
